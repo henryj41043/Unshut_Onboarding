@@ -1,0 +1,25 @@
+@import './Video.css';
+@import './Header.css';
+@import './Quiz.css';
+@import './QuizQuestion.css';
+@import './Fonts.css'; 
+
+*, *::before, *::after {
+  /* font-family: GT America Mono Regular; */
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  /* background-color: #282c34; */
+  background-color: black;
+  min-height: 100vh;
+  min-width: 100vw;
+  
+  color: white;
+}

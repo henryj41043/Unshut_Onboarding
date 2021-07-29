@@ -1,0 +1,16 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 5vw 0;
+}
+
+.rec {
+    max-height: 7vh;
+}
+
+.counter {
+    color: white;
+    font-size: 5vh;
+}
