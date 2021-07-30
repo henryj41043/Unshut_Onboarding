@@ -1,9 +1,16 @@
 import React from 'react'
 import QuizQuestion from './QuizQuestion'
+import QuizAPI from '../api/QuizAPI'
+
+
+export const QuizAPIContext = React.createContext()
 
 export default function Quiz() {
+
+    const questions = QuizAPI
+
     return (
-        <>
+        <QuizAPIContext.Provider value={questions}>
             <div className="quiz-container">
                 <div className="quiz-header">
                     <span className="quiz-header-col f-2">UNSHUT ONBOARDING</span>
@@ -14,7 +21,7 @@ export default function Quiz() {
                 </div>
                 <QuizQuestion />
             </div>
-            <button className="btn-next">next</button>
-        </>
+            {/* <button className="btn-next">next</button> */}
+        </QuizAPIContext.Provider>
     )
 }

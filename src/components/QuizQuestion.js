@@ -1,15 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react';
+import QuizAPI from '../api/QuizAPI'
 
 export default function QuizQuestion() {
+
+    const questions = QuizAPI
+
+    // State that controls the question being displayed
+    const [currentQuestion, setCurrentQuestion] = useState(0)
+    // State that controls the end of test > fade away to black.
+    const [testOver, setTestOver] = useState(false)
+
+    const handleAnswerButtonClick = () => {
+        const nextQuestion = currentQuestion + 1;
+
+        if (nextQuestion < questions.length) {
+            setCurrentQuestion(nextQuestion);
+        } else {
+            setTestOver(true);
+        }
+    }
+
     return (
+        
         <div className="quiz-question-container">
-            <p className="quiz-question"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac feugiat tortor. Fusce bibendum dui ut lorem aliquam, eget porttitor ex ultrices. Donec molestie purus ut lectus ornare eleifend.</p>
-            <select className="quiz-answers">
-                <option value="Answer 1">Lorem ipsum dolor sit amet</option>
-                <option value="Answer ">LimLorem ipsum dolor sit amete</option>
-                <option selected value="Answer 3">Lorem ipsum dolor sit amet</option>
-                <option value="Answer 4">Lorem ipsum dolor sit amet</option>
-            </select>
+        
+            {/* TERNARY: if testOver = true > Sites fades away, otherways Questions are looped. */}
+            { testOver ? 
+                (   <p className="quiz-question">WORK IN PROGRESS...SITE WILL FADE AWAY AT THIS MOMENT</p>
+                ) : (
+                    <>
+                        <p className="quiz-question">{questions[currentQuestion].questionText}</p>
+                        {questions[currentQuestion].questionAnswers.map((answer)=>
+                            <button 
+                                className="quiz-answers"
+                                onClick={handleAnswerButtonClick}>
+                                {answer.answerText}
+                            </button>)
+                        }
+                    </>    
+                )}
         </div>
     )
 }
