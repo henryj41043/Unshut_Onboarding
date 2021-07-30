@@ -1,44 +1,23 @@
-import React, { useState } from 'react';
-import QuizAPI from '../api/QuizAPI'
+import React from 'react';
 
-export default function QuizQuestion() {
+export default function QuizQuestion( props ) {
 
-    const questions = QuizAPI
-
-    // State that controls the question being displayed
-    const [currentQuestion, setCurrentQuestion] = useState(0)
-    // State that controls the end of test > fade away to black.
-    const [testOver, setTestOver] = useState(false)
-
-    const handleAnswerButtonClick = () => {
-        const nextQuestion = currentQuestion + 1;
-
-        if (nextQuestion < questions.length) {
-            setCurrentQuestion(nextQuestion);
-        } else {
-            setTestOver(true);
-        }
-    }
-
+    const { question, answers, handleAnswerButtonClick, handleSelectedAnswers } = props
+    
     return (
-        
         <div className="quiz-question-container">
-        
-            {/* TERNARY: if testOver = true > Sites fades away, otherways Questions are looped. */}
-            { testOver ? 
-                (   <p className="quiz-question">WORK IN PROGRESS...SITE WILL FADE AWAY AT THIS MOMENT</p>
-                ) : (
-                    <>
-                        <p className="quiz-question">{questions[currentQuestion].questionText}</p>
-                        {questions[currentQuestion].questionAnswers.map((answer)=>
-                            <button 
-                                className="quiz-answers"
-                                onClick={handleAnswerButtonClick}>
-                                {answer.answerText}
-                            </button>)
-                        }
-                    </>    
-                )}
+            <p className="quiz-question">{question}</p>
+            {answers.map( (answer) =>
+                <button 
+                    className="quiz-answers"
+                    onClick={()=>{
+                        handleSelectedAnswers(answer.answerText);
+                        handleAnswerButtonClick();
+                    }}
+                    key={answer.answerId}>
+                    {answer.answerText}
+                </button>)
+            }
         </div>
     )
 }

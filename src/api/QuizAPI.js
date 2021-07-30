@@ -1,4 +1,4 @@
-const questionBank = [
+const QuizAPI = [
     {
         questionId: 1,
         questionText: "What is the right definition of Infrasound?",
@@ -182,4 +182,4 @@ const questionBank = [
     }
 ]
 
-export default questionBank;
+export default QuizAPI;
