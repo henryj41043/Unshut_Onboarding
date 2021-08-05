@@ -5,7 +5,7 @@ import Counter from './Counter'
 export default function Header() {
     return (
         <div className="header">
-            <img className="rec" src={recWhite} />
+            <img className="rec" src={recWhite} alt=""/>
             <Counter />
         </div>
     )
