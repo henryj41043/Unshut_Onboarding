@@ -2,86 +2,42 @@
 
 ## To-Do
 
+- [ ] Add partial scores and final score.
+ 
+- [ ] Glitching effect
+- [ ] Set video looping
+ 
+- [ ] FREETEXT = input field.
+- [ ] FLASH of pictures.
+- [ ] Keep the crazy counter. slower at the beggining , faster at the   end.
 
-
-[] FREETEXT = input field.
-[] Add timer.
-[] Add timer functionality.
-[] Add next-button functionality.
-[] Automate Next-Question based on timer.
-[] Capture Answers.
-[] Glitching effect
-[] Set video looping
-[] Populate all Questions
+## Problems
+- [ ] Reset timer to 0 2x > WHY??
+- [ ] Not answered stored 2x WHY ??
 
 ## Questions
-[] DO WE WANNA SHOW PARTIAL SCORES AS THE TEST ADVANCES?
+- [x] DO WE WANNA SHOW PARTIAL SCORES AS THE TEST ADVANCES? > Yes.
 
 ## Done 
+### Thu Aug 05
+- [x] Refactored Context.
+- [x] Add timer.
+- [x] Add timer functionality.
+- [x] Automate Next-Question based on timer.
+- [x] Capture "Not Answered." if no answer is selected.
+
+### Mon Aug 02
+- [x] Populate all Questions and Scores.
 
 ### Fri Jul 30
-[x] Create questions API, populate a sample Questions and Answers.
-[x] Add Answer button functionality.
-
+- [x] Create questions API, populate a sample Questions and Answers.
+- [x] Add Answer button functionality.
+- [x] Capture Answers.
 
 ### Thu Jul 29
-- Site structure
-[x] Set background video
-[x] Structure components
-[x] CSS
-[x] Investigate how to make a quiz app.
+- [x] Site structure
+- [x] Set background video
+- [x] Structure components
+- [x] CSS
+- [x] Investigate how to make a quiz app.
     1. Create a QuestionList.js Array of Dict { Q : q, Answ: [{id: #, Ans: 'asdf', isCorrect: 'true/false' }, {}, {}]}
-
-
-    <!-- 
-    
-<!-- SCORE STATEMENT (RANDOMIZED, IF POSSIBLE):          
-71% - PASS, CONTINUE
-75% - PASS, CONTINUE
-83% - SUCCESS, CONTINUE
-82% - SUCCESS, CONTINUE
-85% - ACCEPTABLE, CONTINUE
-78% - ACCEPTABLE, CONTINUE
-70% - ADEQUATE, CONTINUE
-84% - ADEQUATE, CONTINUE -->
-
-
-    
-     -->
-
-     {
-        questionId: 1,
-        questionText: "",
-        questionAnswers: [
-            {   
-                answerId: 01,
-                answerText: "",
-                isCorrect: false
-            },
-            {   
-                answerId: 02,
-                answerText: "",
-                isCorrect: false
-            },
-            {   
-                answerId: 03,
-                answerText: "",
-                isCorrect: false
-            },
-            {   
-                answerId: 04,
-                answerText: "",
-                isCorrect: false
-            },
-            {   
-                answerId: 05,
-                answerText: "",
-                isCorrect: false
-            },
-            {   
-                answerId: 06,
-                answerText: "",
-                isCorrect: false
-            }
-        ]
-    },
