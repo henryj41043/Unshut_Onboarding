@@ -1,5 +1,5 @@
 const QuizAPI = [
-    // part_1 - 8 questions
+    // "part_1" :
     { 
         "questions": [
             {
@@ -222,7 +222,7 @@ const QuizAPI = [
             "84% - ADEQUATE, CONTINUE"
         ]
     },
-    // "part_2 - 4 questions
+    // "part_2" :
     {   
         "questions": [
             {
@@ -286,10 +286,13 @@ const QuizAPI = [
             },
         ],
         "scores": [
-            "81%.  ABOVE AVERAGE. CONTINUE"
+            "81%.  ABOVE AVERAGE. CONTINUE",
+            "83% random score",
+            "91%",
+            "Test%"
         ]
     },
-    // "part_3" : 5 questions
+    // "part_3" :
     {
         "questions": [
             {
@@ -389,7 +392,7 @@ const QuizAPI = [
             "12% - FAILURE TO MEET SPECIFICITY STANDARDS. REMAINING ATTEMPTS: 1"
         ]
     },
-    // "part_4" : 9 questions
+    // "part_4" :
     {
         "questions": [
             {
@@ -598,7 +601,9 @@ const QuizAPI = [
             },
         ],
         "scores": [
-            "FINAL SCORE STATEMENT: 69%. YOU HAVE BEEN ACCEPTED. AWAIT FURTHER CONTACT"
+            "FINAL SCORE STATEMENT: 69%. YOU HAVE BEEN ACCEPTED. AWAIT FURTHER CONTACT",
+            "FINAL SCORE STATEMENT: 71%. YOU HAVE BEEN ACCEPTED. AWAIT FURTHER CONTACT",
+            "FINAL SCORE STATEMENT: 74%. YOU HAVE BEEN ACCEPTED. AWAIT FURTHER CONTACT"
         ]
     }
 ]
