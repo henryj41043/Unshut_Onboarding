@@ -2,6 +2,7 @@
 @import './Header.css';
 @import './Quiz.css';
 @import './QuizQuestion.css';
+@import './Score.css';
 @import './Fonts.css'; 
 
 *, *::before, *::after {
