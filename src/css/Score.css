@@ -1,0 +1,26 @@
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score-result {
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 8vh;
+    /* height: inherit; */
+    width: inherit;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.score-continue-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 6vh;
+    margin: 20px 0;  
+    padding: 2vh;
+    /* position: relative; */
+}
