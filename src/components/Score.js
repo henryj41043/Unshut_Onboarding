@@ -9,7 +9,6 @@ export default function Score() {
         isLastPart,
         handleCurrentPart,
         setTestOver,
-        setSeconds
     } = useContext(AppContext)
 
     console.log('currentPart', currentPart)
