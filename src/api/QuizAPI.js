@@ -36,7 +36,8 @@ const QuizAPI = [
                         answerText: "The resonant frequency of the human eyeball, which can produce hallucinations when stimulated.",
                         isCorrect: false
                     }
-                ]
+                ],
+                freetext: false
             },
             {
                 questionId: 2,
@@ -56,13 +57,9 @@ const QuizAPI = [
                         answerId: 3,
                         answerText: "A mold found in the crevices of certain southwest acequias.",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 4,
-                        answerText: "FREE TEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 3,
@@ -88,7 +85,8 @@ const QuizAPI = [
                         answerText: "A round or cycle of events in time or in a recurring period of time.",
                         isCorrect: false
                     }
-                ]
+                ],
+                freetext: false
             },
             {
                 questionId: 4,
@@ -108,13 +106,9 @@ const QuizAPI = [
                         answerId: 3,
                         answerText: "The CIA’s official terminology for “double-walker” or “dopplegänger”.",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 4,
-                        answerText: "FREETEXT.",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 5,
@@ -139,13 +133,9 @@ const QuizAPI = [
                         answerId: 4,
                         answerText: "51",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 5,
-                        answerText: "FREE TEXT.",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 6,
@@ -170,24 +160,15 @@ const QuizAPI = [
                         answerId: 4,
                         answerText: "Frequency",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 5,
-                        answerText: "FREETEXT.",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 7,
                 questionText: "What does the word tenuto mean to you?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREE TEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 8,
@@ -202,13 +183,9 @@ const QuizAPI = [
                         answerId: 2,
                         answerText: "No",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 3,
-                        answerText: "FREETEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             }
         ],
         "scores" : [
@@ -243,46 +220,27 @@ const QuizAPI = [
                         answerId: 3,
                         answerText: "Bandaging a wound.",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 4,
-                        answerText: "FREE TEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 2,
                 questionText: "When is a door not closed?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 3,
                 questionText: "Which countries make up the “5 Eyes” - an intelligence-sharing security alliance between five English-speaking nations ostensibly set up to combat global terrorism?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 4,
                 questionText: "Why are you afraid of the dark?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
         ],
         "scores": [
@@ -324,29 +282,20 @@ const QuizAPI = [
                         answerText: "f",
                         isCorrect: false
                     }
-                ]
+                ],
+                freetext: false
             },
             {
                 questionId: 2,
                 questionText: "How many airports currently exist?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 3,
                 questionText: "FLASH OF IMAGES, What did you see?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 4,
@@ -372,18 +321,14 @@ const QuizAPI = [
                         answerText: "A bulletproof vest",
                         isCorrect: false
                     }
-                ]
+                ],
+                freetext: false
             },
             {
                 questionId: 5,
                 questionText: "Describe the color you last saw behind your eyes.",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
         ],
         "scores": [
@@ -409,18 +354,14 @@ const QuizAPI = [
                         answerText: "No (“No” Takes user to black screen with no code, no text)",
                         isCorrect: false
                     }
-                ]
+                ],
+                freetext: false
             },
             {
                 questionId: 2,
                 questionText: "What are three uses for a mirror?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 3,
@@ -466,18 +407,14 @@ const QuizAPI = [
                         answerText: "A handkerchief covered in harmful bacteria and toxins.",
                         isCorrect: false
                     }
-                ]
+                ],
+                freetext: false
             },
             {
                 questionId: 4,
                 questionText: "Describe a method for soundproofing a room without the use of dead air.",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 5,
@@ -492,13 +429,9 @@ const QuizAPI = [
                         answerId: 2,
                         answerText: "1-2 years",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 3,
-                        answerText: "FREETEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 6,
@@ -523,13 +456,9 @@ const QuizAPI = [
                         answerId: 4,
                         answerText: "1500",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 5,
-                        answerText: "FREETEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 7,
@@ -549,24 +478,15 @@ const QuizAPI = [
                         answerId: 3,
                         answerText: "12 Khz",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 4,
-                        answerText: "FREETEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
             {
                 questionId: 8,
                 questionText: "Which person in your life is most likely to betray you?",
-                questionAnswers: [
-                    {   
-                        answerId: 1,
-                        answerText: "FREETEXT",
-                        isCorrect: false
-                    }
-                ]
+                questionAnswers: [],
+                freetext: true
             },
             {
                 questionId: 9,
@@ -591,13 +511,9 @@ const QuizAPI = [
                         answerId: 4,
                         answerText: "A revolution",
                         isCorrect: false
-                    },
-                    {   
-                        answerId: 5,
-                        answerText: "FREETEXT",
-                        isCorrect: false
                     }
-                ]
+                ],
+                freetext: true
             },
         ],
         "scores": [
