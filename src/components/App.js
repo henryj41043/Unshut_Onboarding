@@ -1,4 +1,4 @@
-import React,  { useState, useEffect } from 'react'
+import React,  { useState, useEffect, useCallback } from 'react'
 
 import '../css/App.css';
 
@@ -17,12 +17,14 @@ function App() {
   const [testOver, setTestOver] = useState(false)
 
   // USE STATES FOR COUNTER
-  const [seconds, setSeconds] = useState(7); //30
+  const [seconds, setSeconds] = useState(2); //30
   const [minutes, setMinutes] = useState(0); //1
   const [timeOver, setTimeOver] = useState(false)
   
   // USE STATES FOR QUIZ
-  const [currentPart, setCurrentPart] = useState(0)
+  const [currentPart, setCurrentPart] = useState(0) //0
+  const [isCurrentPartOver, setCurrentPartOver] = useState(false)
+  const [isLastPart, setLastPart] = useState(false)
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [selectedAnswers, setSelectedAnswers] = useState([])
 
@@ -46,40 +48,34 @@ function App() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(selectedAnswers))
   }, [selectedAnswers])
 
-  // CONTEXT VALUE
-  const appContextValue = {
-    seconds,
-    minutes,
-    timeOver,
-    QuizAPI,
-    currentPart,
-    currentQuestion,
-    handleAnswerButtonClick,
-    handleSelectedAnswers,
-    timeOverNextQuestion,
-    resetTimer
-  }
-
-
+  
   // FUNCTIONS 
 
   // Counter
   function resetTimer () {
     setTimeOver(false);
     setMinutes(0); //1
-    setSeconds(30); //30
+    setSeconds(1); //30
   }
 
   // QUIZ
   function handleCurrentPart () {
+    console.log('currentPart', currentPart)
     const nextPart = currentPart + 1
 
-    if (nextPart < QuizAPI.length) {
+    if (nextPart < QuizAPI.length - 1) {
+      console.log('nextPart', nextPart, "/", QuizAPI.length-1)
+      setCurrentPartOver(false);
       setCurrentPart(nextPart);
       setCurrentQuestion(0);
+      resetTimer();
     } else {
-      // else final score & test over
-      setTestOver(true);
+      setCurrentPartOver(false);
+      setCurrentPart(nextPart);
+      setCurrentQuestion(0);
+      resetTimer();
+      setLastPart(true);
+      
     }
   }
 
@@ -90,28 +86,49 @@ function App() {
       setCurrentQuestion(nextQuestion);
       resetTimer();       
     } else {
-      // call random score, call next part
-      handleCurrentPart();
+      setCurrentPartOver(true)
     }
   }
 
-  function timeOverNextQuestion () {
-    const nextQuestion = currentQuestion + 1;
-
-    if (nextQuestion < QuizAPI[currentPart].questions.length) {
-        handleSelectedAnswers("Not Answered.")
-        setCurrentQuestion(nextQuestion);
-        resetTimer();
-    } else {
-        handleSelectedAnswers("Not Answered.")
-        handleCurrentPart();
-    }
-  }
+  const timeOverNextQuestion = useCallback(
+    () => {
+      const nextQuestion = currentQuestion + 1;
+  
+      if (nextQuestion < QuizAPI[currentPart].questions.length) {
+          handleSelectedAnswers("Not Answered.")
+          setCurrentQuestion(nextQuestion);
+          resetTimer();
+      } else {
+          handleSelectedAnswers("Not Answered.");
+          setCurrentPartOver(true);
+      }
+    },
+    [currentPart, currentQuestion]
+  )
   
   function handleSelectedAnswers(answer) {
     console.log(answer)
     setSelectedAnswers(selectedAnswers => [...selectedAnswers, answer])
-}
+  }
+
+  // CONTEXT VALUE
+  const appContextValue = {
+    seconds,
+    minutes,
+    timeOver,
+    QuizAPI,
+    currentPart,
+    isCurrentPartOver,
+    isLastPart,
+    currentQuestion,
+    handleAnswerButtonClick,
+    handleSelectedAnswers,
+    handleCurrentPart,
+    timeOverNextQuestion,
+    resetTimer,
+    setSeconds,
+    setTestOver
+  }
 
   return (
     <AppContext.Provider value={appContextValue}>
