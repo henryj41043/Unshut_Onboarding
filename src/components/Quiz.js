@@ -34,6 +34,7 @@ export default function Quiz() {
                 <QuizQuestion
                     question={QuizAPI[currentPart].questions[currentQuestion].questionText}
                     answers={QuizAPI[currentPart].questions[currentQuestion].questionAnswers}
+                    freetext={QuizAPI[currentPart].questions[currentQuestion].freetext}
                 />
                         
             </div>
