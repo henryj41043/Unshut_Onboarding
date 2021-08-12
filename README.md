@@ -1,24 +1,29 @@
 # Onboarding Site
 
 ## To-Do
-
-- [ ] Add partial scores and final score.
+- [ ] FREETEXT = input field > Work in progress...
+- [ ] FLASH of pictures.
+- [ ] Keep the crazy counter. slower at the beggining , faster at the   end.
  
 - [ ] Glitching effect
 - [ ] Set video looping
- 
-- [ ] FREETEXT = input field.
-- [ ] FLASH of pictures.
-- [ ] Keep the crazy counter. slower at the beggining , faster at the   end.
 
 ## Problems
-- [ ] Reset timer to 0 2x > WHY??
-- [ ] Not answered stored 2x WHY ??
+- [ ] timer acts funny when an answered is Clicked.
+- [ ] "NotAnswered"  on "timeOverNextQuestion" get consoled-logged 1 extra time WHY?
+- [ ] freetext condition gets re-rendered with every change in seconds
+- [ ] Score-random-index gets called a bunch of times after installing the input field.
 
 ## Questions
+- [ ] DO WE WANNA HAVE A CONTINUE BTN AFTER EACH SCORE,
+- [ ] OR DO WE PREFER TO HAVE A TIMER ??
+
 - [x] DO WE WANNA SHOW PARTIAL SCORES AS THE TEST ADVANCES? > Yes.
 
-## Done 
+## Done
+### Tue Aug 10
+- [x] Add partial scores and final score.
+
 ### Thu Aug 05
 - [x] Refactored Context.
 - [x] Add timer.
