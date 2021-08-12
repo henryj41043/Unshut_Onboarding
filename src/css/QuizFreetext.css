@@ -1,0 +1,19 @@
+.freetext-container {
+    margin: 0.7vh auto;
+}
+
+.freetext:hover {
+    background-color: lawngreen;
+    color: black;
+}
+
+.freetext {
+    appearance: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    height: 10vh;
+    margin: 0.7vh auto;
+    padding: 2vh;
+    width: 40vw;
+}
