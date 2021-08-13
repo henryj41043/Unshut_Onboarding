@@ -309,7 +309,7 @@ const QuizAPI = [
                 questionId: 3,
                 questionText: "FLASH OF IMAGES, What did you see?",
                 questionAnswers: [],
-                freetext: false,
+                freetext: true,
                 flashOfImages: true 
             },
             {
