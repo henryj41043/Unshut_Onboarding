@@ -37,7 +37,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: false
+                freetext: false,
+                flashOfImages: false
             },
             {
                 questionId: 2,
@@ -59,7 +60,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 3,
@@ -86,7 +88,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: false
+                freetext: false,
+                flashOfImages: false
             },
             {
                 questionId: 4,
@@ -108,7 +111,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 5,
@@ -135,7 +139,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 6,
@@ -162,13 +167,15 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 7,
                 questionText: "What does the word tenuto mean to you?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 8,
@@ -185,7 +192,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             }
         ],
         "scores" : [
@@ -222,25 +230,29 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 2,
                 questionText: "When is a door not closed?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 3,
                 questionText: "Which countries make up the “5 Eyes” - an intelligence-sharing security alliance between five English-speaking nations ostensibly set up to combat global terrorism?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 4,
                 questionText: "Why are you afraid of the dark?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
         ],
         "scores": [
@@ -283,19 +295,22 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: false
+                freetext: false,
+                flashOfImages: false
             },
             {
                 questionId: 2,
                 questionText: "How many airports currently exist?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 3,
                 questionText: "FLASH OF IMAGES, What did you see?",
                 questionAnswers: [],
-                freetext: true
+                freetext: false,
+                flashOfImages: true 
             },
             {
                 questionId: 4,
@@ -322,13 +337,15 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: false
+                freetext: false,
+                flashOfImages: false
             },
             {
                 questionId: 5,
                 questionText: "Describe the color you last saw behind your eyes.",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
         ],
         "scores": [
@@ -355,13 +372,15 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: false
+                freetext: false,
+                flashOfImages: false
             },
             {
                 questionId: 2,
                 questionText: "What are three uses for a mirror?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 3,
@@ -408,13 +427,15 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: false
+                freetext: false,
+                flashOfImages: false
             },
             {
                 questionId: 4,
                 questionText: "Describe a method for soundproofing a room without the use of dead air.",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 5,
@@ -431,7 +452,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 6,
@@ -458,7 +480,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 7,
@@ -480,13 +503,15 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 8,
                 questionText: "Which person in your life is most likely to betray you?",
                 questionAnswers: [],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
             {
                 questionId: 9,
@@ -513,7 +538,8 @@ const QuizAPI = [
                         isCorrect: false
                     }
                 ],
-                freetext: true
+                freetext: true,
+                flashOfImages: false
             },
         ],
         "scores": [
