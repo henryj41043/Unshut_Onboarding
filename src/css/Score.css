@@ -22,5 +22,9 @@
     font-size: 6vh;
     margin: 20px 0;  
     padding: 2vh;
-    /* position: relative; */
+}
+
+.score-continue-btn:hover {
+    background-color: lawngreen;
+    color: black;
 }
