@@ -1,4 +1,8 @@
-.flash-images {
-    max-height: 400px;
+.img-container {
+    margin: 0.7vh auto;
+}
 
+.flash-images {
+    max-height: 30vh;
+    margin: 0.7vh auto;
 }
