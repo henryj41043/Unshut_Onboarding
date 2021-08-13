@@ -30,11 +30,12 @@ export default function Quiz() {
                     <span className="quiz-header-col f-2">SECTION {currentQuestion + 1} OF {QuizAPI[currentPart].questions.length}</span>
                     <span className="quiz-header-col f-1"></span>
                 </div>
-                        
+                {/* {console.log("QUIZ COMPONENT")}         */}
                 <QuizQuestion
                     question={QuizAPI[currentPart].questions[currentQuestion].questionText}
                     answers={QuizAPI[currentPart].questions[currentQuestion].questionAnswers}
                     freetext={QuizAPI[currentPart].questions[currentQuestion].freetext}
+                    flashOfImages={QuizAPI[currentPart].questions[currentQuestion].flashOfImages}
                 />
                         
             </div>
