@@ -26,9 +26,10 @@ export default function QuizQuestion( props ) {
 
             {/* {console.log("FROM QUIZQUESTION COMPONENT: freetext ", freetext)} */}
             
-            { freetext ? (<QuizFreetext />) : ( <> </> ) }
+            { flashOfImages ? ( <FlashOfImages /> ) : ( <> </> ) } 
             
-            { flashOfImages ? ( <FlashOfImages /> ) : ( <> </> ) }
+            { freetext ? (<QuizFreetext />) : ( <> </> ) }
+                   
         </div>
     )
 }
