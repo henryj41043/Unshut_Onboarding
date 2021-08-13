@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { AppContext } from './App';
 import QuizFreetext from './QuizFreetext';
+import FlashOfImages from './FlashOfImages';
 
 export default function QuizQuestion( props ) {
 
-    const { question, answers, freetext } = props
+    const { question, answers, freetext, flashOfImages } = props
     const { handleAnswerButtonClick, handleSelectedAnswers } = useContext(AppContext)
 
     return (
@@ -23,9 +24,11 @@ export default function QuizQuestion( props ) {
                 </button>)
             }
 
-            {console.log("freetext ", freetext)}
+            {/* {console.log("FROM QUIZQUESTION COMPONENT: freetext ", freetext)} */}
             
             { freetext ? (<QuizFreetext />) : ( <> </> ) }
+            
+            { flashOfImages ? ( <FlashOfImages /> ) : ( <> </> ) }
         </div>
     )
 }
