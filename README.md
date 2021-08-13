@@ -2,7 +2,7 @@
 
 ## To-Do
 - [ ] Fix BUG on QUIZ component rerendering.
-- [ ] Fix BUG on seconds.
+- [ ] Fix BUG on seconds. 
 - [ ] Question 1 - part 4 > ADD yes/no functionality.
 - [ ] Keep the crazy counter. slower at the beggining , faster at the end. AFTER FIXING THE BUG
  
@@ -13,8 +13,8 @@
 - [ ] input fields do not CLEAR if an answer is entered in the previous question > WHYYY?
 - [ ] timer acts funny when an answered is Clicked.
 - [ ] "NotAnswered"  on "timeOverNextQuestion" get consoled-logged 1 extra time WHY?
-- [ ] freetext condition gets re-rendered with every change in seconds
-- [ ] Score-random-index gets called a bunch of times after installing the input field.
+- [ ] QuizQuestion.js gets re-rendered with every change in seconds
+- [ ] Score-random-index gets called a bunch of times, this happens since I added the QuizFreetext component.
 
 ## Questions
 - [ ] DO WE WANT THE CONTINUE BUTTON AFTER EACH SCORE,
